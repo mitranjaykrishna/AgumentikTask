@@ -1,11 +1,12 @@
 import { Box, Button} from '@mui/material';
 import React from 'react'
+import styled from "styled-components";
 import { NavLink } from 'react-router-dom';
 
 const HeroSection=()=>{
     return(
         <>
-
+            <Wrapper>
                 <div className="container grid grid-two-column">
                     <div className="section-hero-data">
                         <p className="hero-top-data"><b>The Exotic</b></p>
@@ -24,9 +25,15 @@ const HeroSection=()=>{
                     </picture>
                     </div>
                 </div>
-
+                </Wrapper>
         </>
     )
 }
+
+
+const Wrapper= styled.section `
+
+    
+`;
 
 export default HeroSection;
