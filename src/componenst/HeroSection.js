@@ -49,6 +49,7 @@ const Wrapper= styled.section `
 
     .btn{
         max-width: 16rem;
+        border: 2px solid #3282AD;
     }
 
     .logReg{
