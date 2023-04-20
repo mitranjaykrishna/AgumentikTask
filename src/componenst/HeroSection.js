@@ -114,7 +114,7 @@ const Wrapper= styled.section `
         position: absolute;
         align:center;
         width:879px;
-        height:700px;
+        height:500px;
     }
     .hero-img {
         width: 490.84px;
