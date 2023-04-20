@@ -25,9 +25,9 @@ a:link, a:visited{
     display: grid;
     grid-template-columns: 6rem 1.3fr 4fr 6fr 6rem;
     
-    background-color: white;
+    background: linear-gradient(180deg, #E5F8FE 100%, rgba(255, 255, 255, 0) 100%);
     
-    /* box-shadow: 20px 20px 120px #84b9f1; */
+    box-shadow: 20px 20px 120px #84b9f1;
 }
 
 .logo{

@@ -37,6 +37,7 @@ const HeroSection=()=>{
 const Wrapper= styled.section `
 
     padding: 9rem 0;
+    background: linear-gradient(180deg, #E5F8FE 14.25%, rgba(255, 255, 255, 0) 100%);
 
     .section-hero-data{
         display: flex;
