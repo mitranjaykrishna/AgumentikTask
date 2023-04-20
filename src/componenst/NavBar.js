@@ -2,7 +2,6 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import './styles/NavBar.css';
 import { Button } from "@mui/material";
-import ButtonGroup from '@mui/material/ButtonGroup';
 import Box from '@mui/material/Box';
 
 const NavBar=()=>{
