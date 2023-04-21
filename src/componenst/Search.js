@@ -56,8 +56,8 @@ const Search=()=>{
                         
                     </div>
                     <div className="r rlast">
-                                    <Button variant="text">+ Add Promo Code</Button>
-                                    <Button variant="container">Show Flights</Button>
+                            <Button variant="text">+ Add Promo Code</Button>
+                            <Button variant="container">Show Flights</Button>
                     </div>
                 </div>
             </Wrapper>
@@ -91,18 +91,15 @@ const Wrapper=styled.section`
         grid-template-columns:1fr .5fr 1fr 1fr;
         gap:32px;
     }
-    
+    .r h3{
+        font-weight: 600;
+        font-size: 20px;
+    }
     
     .rlast{
         display:flex;
         flex-direction:row;
         justify-content:right;
     }
-
-    
-
-    
-
-
 `;
 export default Search;

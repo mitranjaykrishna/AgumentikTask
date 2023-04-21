@@ -4,6 +4,7 @@ import Home from './componenst/Home';
 import NavBar from './componenst/NavBar';
 import { GlobalStyle } from "./GlobalStyle";
 import { ThemeProvider } from 'styled-components';
+import Footer from './componenst/Footer';
 
 const App=()=>{
     const theme = {
@@ -35,6 +36,7 @@ const App=()=>{
         <Route exatct path='/' element={<Home />} />
         <Route exatct path='/services' element={<h1>/services</h1>} />
       </Routes>
+      <Footer />
     </BrowserRouter>
   </ThemeProvider>
   </>
