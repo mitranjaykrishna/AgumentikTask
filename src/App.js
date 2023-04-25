@@ -5,6 +5,7 @@ import NavBar from './componenst/NavBar';
 import { GlobalStyle } from "./GlobalStyle";
 import { ThemeProvider } from 'styled-components';
 import Footer from './componenst/Footer';
+import Certificate from './componenst/Certificates';
 
 const App=()=>{
     const theme = {
@@ -34,7 +35,7 @@ const App=()=>{
       <NavBar/>
       <Routes>
         <Route exatct path='/' element={<Home />} />
-        <Route exatct path='/services' element={<h1>/services</h1>} />
+        <Route exatct path='/services' element={<Certificate/>} />
       </Routes>
       <Footer />
     </BrowserRouter>

@@ -51,7 +51,7 @@ h2 {
    text-align: center;
   }
 
-  h3 {
+h3 {
   font-size: 1.8rem;
   font-weight: 400;
 }
@@ -74,13 +74,13 @@ li {
 }
 
 .container {
-  max-width: 120rem;
+  max-width: 130rem;
   margin: 0 auto;
 }
 
 .grid {
   display: grid;
-  gap: 9rem;
+  gap: 6rem 3rem;
 }
 
 .grid-two-column {
@@ -92,7 +92,7 @@ li {
 }
 
 .grid-four-column{
-   grid-template-columns: 1fr 1.2fr .5fr .8fr ;
+   grid-template-columns: repeat(4,1fr);
 }
 
 .common-heading {

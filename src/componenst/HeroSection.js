@@ -9,7 +9,7 @@ const HeroSection=()=>{
             <Wrapper>
                 <div className="container grid grid-two-column">
                     <div className="section-hero-data">
-                    <Button className="btn logReg "><NavLink exact activeClassName="active" to='/'>Visit</NavLink></Button>
+                    <Button className="btn logReg "><NavLink exact activeClassName="active" to='/'>Visit <img src='./icon/compas.svg' alt='' /></NavLink></Button>
 
                         <p className="hero-top-data"><b>The Exotic</b></p>
                         <h1 className="hero-heading">
@@ -65,6 +65,9 @@ const Wrapper= styled.section `
     .logReg{
         font-weight: 400;
         font-size: 36px;
+        display:flex;
+        flex-direction: column;
+        align-items:center;
     }
 
     .logReg1{
