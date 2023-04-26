@@ -22,7 +22,7 @@ const HeroSection=()=>{
                     </div>
 
                     <div className="section-hero-image">
-                    <img src='./map.svg'alt="" className="map" />
+                    {/* <img src='./map.svg'alt="" className="map" /> */}
                     <picture>
                         <img src='./people.svg'alt="" className="hero-img fluidAnim" />
                     </picture>
@@ -116,8 +116,8 @@ const Wrapper= styled.section `
     .map{
         position: absolute;
         align:center;
-        width:879px;
-        height:500px;
+        ${'' /* width:100%;
+        height:500px; */}
     }
     .hero-img {
         width: 490.84px;

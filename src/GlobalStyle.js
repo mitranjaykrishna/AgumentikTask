@@ -150,6 +150,8 @@ input[type="submit"]{
         font-size: 50%;
       }
 
+      
+
       .grid{
         gap: 3.2rem;
       }

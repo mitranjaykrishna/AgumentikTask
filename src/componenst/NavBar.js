@@ -3,15 +3,19 @@ import { NavLink } from "react-router-dom";
 import './styles/NavBar.css';
 import { Button } from "@mui/material";
 import Box from '@mui/material/Box';
+import {GiHamburgerMenu} from 'react-icons/gi';
+import { useState } from "react";
 
 const NavBar=()=>{
+    const [showMediaIcons, setShowMediaIcons] = useState(false);
     return <>
         <nav className="main_nav">
             <div className="logo">
                 <NavLink to='/'><img src="./gol-logo-1.svg" alt="Logo" /></NavLink>
             </div>
 
-            <div className="menu-link">
+            <div className={
+            showMediaIcons ? "menu-link mobile-menu-link" : "menu-link"}>
                 <ul>
                     <li><Button className="buttonEffect"><NavLink exact activeClassName="active" to ='/'>Home</NavLink></Button></li>
                     <li><Button className="buttonEffect"><NavLink exact activeClassName="active" to ='/about'>About US</NavLink></Button></li>
@@ -20,7 +24,7 @@ const NavBar=()=>{
             </div>
 
             <div className="affiliated">
-                    <ul >
+                    <ul className="affiliated-desktop">
                         <li >
                             <Box className="affiButtonG buttonEffect" >
                                 
@@ -30,11 +34,14 @@ const NavBar=()=>{
                             </Box>
                         </li>
                     </ul>
-                </div>
 
 
-
-            
+                    <div className="hamburger-menu">
+                        <a href="#" onClick={()=>setShowMediaIcons(!showMediaIcons)}>
+                            <GiHamburgerMenu />
+                        </a>
+                    </div>
+            </div>  
         </nav>
     </>
 }

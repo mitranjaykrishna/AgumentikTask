@@ -106,6 +106,57 @@ const Wrapper = styled.section`
         cursor: pointer;
     }
 
+    @media (max-width: ${({ theme }) => theme.media.tab}) {
+        ${'' /* .grid {
+            gap: 7.2rem;
+        } */}
+
+        .containerInside{
+        max-width: 100%;
+        margin: 0 auto;
+        ${'' /* margin-top:10rem; */}
+        }
+
+        .heading {
+        font-size: 4rem;
+        font-weight: 700;
+        margin-bottom: 5rem;
+        text-transform: capitalize;
+        color: black;
+        }
+        .insideThought{
+            display:flex;
+            justify-content: center;
+            font-size:1.4rem;
+            margin:0 4rem 0 4rem;
+        }
+    }
+
+    @media (max-width: ${({ theme }) => theme.media.mobile}) {
+
+        .containerInside{
+        max-width: 100%;
+        margin: 0 auto;
+        ${'' /* margin-top:10rem; */}
+        }
+
+        .heading {
+        font-size: 3rem;
+        font-weight: 700;
+        margin-bottom: 3rem;
+        text-transform: capitalize;
+        color: black;
+        }
+        .insideThought{
+            display:flex;
+            justify-content: center;
+            font-size:1.2rem;
+            margin:0 3rem 0 3rem;
+        }
+
+        
+    }
+
 `;
 
 export default Certificate;
