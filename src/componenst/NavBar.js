@@ -37,8 +37,8 @@ const NavBar=()=>{
 
 
                     <div className="hamburger-menu">
-                        <a href="#" onClick={()=>setShowMediaIcons(!showMediaIcons)}>
-                            <GiHamburgerMenu />
+                        <a href="#0" >
+                            <GiHamburgerMenu onClick={()=>setShowMediaIcons(!showMediaIcons)}/>
                         </a>
                     </div>
             </div>  
