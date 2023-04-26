@@ -142,6 +142,12 @@ input[type="submit"]{
         .grid-three-column {
       grid-template-columns: 1fr 1fr;
     }
+
+    h1{
+  color:${({ theme }) => theme.colors.heading};
+  font-size: 4rem;
+  font-weight: 900;
+}
 }
 
 @media (max-width:${({ theme }) => theme.media.mobile}) {
@@ -159,6 +165,13 @@ input[type="submit"]{
       .grid-two-column, .grid-three-column, .grid-four-column{
         grid-template-columns: 1fr;
       }
+
+      h1{
+  color:${({ theme }) => theme.colors.heading};
+  font-size: 5rem;
+  font-weight: 900;
+}
+
 }
 
 

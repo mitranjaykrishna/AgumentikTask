@@ -6,17 +6,17 @@ const Footer =()=>{
     return <Wrapper>
 
     <section className='contact-sort'>
-        <div className=' grid grid-three-column'>
+        <div className=' grid grid-two-column'>
             <div className='s1'>
                 <h1>Download Our App</h1>
                 <h3>The best travel in the world</h3>
                 <img src='./play-store.svg' alt=''/>
             </div>
-            <div className='s1'>
+            {/* <div className='s1'>
                 <img src='./Ellipse.svg' className='ellipse' alt=''/>
-            </div>
+            </div> */}
 
-            <div >
+            <div className='mobile' >
                 <img src='./Mobile.svg' className='mobile' alt=''/>
             </div>
         </div>
@@ -93,7 +93,8 @@ const Footer =()=>{
 
 const Wrapper=styled.section`
     .contact-sort{
-        max-width:90vw;    
+        width:90vw;
+        height:20rem;    
         margin: auto;
         padding: 1rem 3rem;
         background-color: #000000;
@@ -107,7 +108,7 @@ const Wrapper=styled.section`
         }
         .s1 h1{
             font-weight: 700;
-            font-size: 42px;
+            font-size: 32px;
             color:#FFFFFF;
         }
         .ellipse{
@@ -177,11 +178,112 @@ const Wrapper=styled.section`
 
         }
 
-        .mobile{
-            
+        .mobile img{
+            height:5rem;
+            width:5rem;
             
         }
     }
+
+    @media (max-width: ${({ theme }) => theme.media.tab}) {
+
+        .grid-two-column{
+            grid-template-columns: repeat(2,minmax(0, 1fr));
+            ${'' /* grid-auto-rows:0; */}
+        }
+        .contact-short {
+        width: 30vw;
+        height:10vw;
+        padding: 1rem 0rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .contact-short-btn {
+            text-align: center;
+            justify-self: flex-start;
+      }
+
+      .s1 h1{
+            font-weight: 700;
+            font-size: 10rem;
+            color:#FFFFFF;
+        }
+    .s1 img{
+        
+    }
+        .ellipse{
+            position:absolute;
+            width: 5rem;
+            height: 20rem;
+            bottom:0px;
+        }
+
+        
+
+        .mobile{
+            width:100rem;
+            height:50rem;
+        }
+        .mobile img{
+            width:50rem;
+            height:40rem;
+        }
+
+    }
+    
+    footer .footer-bottom--section {
+      padding-top: 3.2rem;
+    }
+  }
+
+  @media (max-width: ${({ theme }) => theme.media.mobile}) {
+
+.grid-two-column{
+    grid-template-columns: repeat(2,minmax(0, 1fr));
+    ${'' /* grid-auto-rows:0; */}
+}
+.contact-short {
+width: 30vw;
+height:10vw;
+padding: 1rem 0rem;
+display: flex;
+justify-content: center;
+align-items: center;
+.contact-short-btn {
+    text-align: center;
+    justify-self: flex-start;
+}
+
+.s1 h1{
+    font-weight: 700;
+    font-size: 10rem;
+    color:#FFFFFF;
+}
+.s1 img{
+    height:10rem;
+    width:10rem;
+
+}
+.ellipse{
+    position:absolute;
+    width: 5rem;
+    height: 20rem;
+    bottom:0px;
+}
+
+
+
+.mobile{
+    width:100rem;
+    height:50rem;
+}
+
+}
+
+footer .footer-bottom--section {
+padding-top: 3.2rem;
+}
+}
 `;
 
 export default Footer;

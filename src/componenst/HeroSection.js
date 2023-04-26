@@ -9,7 +9,7 @@ const HeroSection=()=>{
             <Wrapper>
                 <div className="container grid grid-two-column">
                     <div className="section-hero-data">
-                    <Button className="btn logReg "><NavLink exact activeClassName="active" to='/'>Visit <img src='./icon/compas.svg' alt='' /></NavLink></Button>
+                        <Button className="btn logReg "><NavLink exact activeClassName="active" to='/'>Visit <img src='./icon/compas.svg' alt='' /></NavLink></Button>
 
                         <p className="hero-top-data"><b>The Exotic</b></p>
                         <h1 className="hero-heading">
@@ -51,14 +51,14 @@ const Wrapper= styled.section `
         
     }
     .btn{
-        max-width: 16rem;
-        text-color: #3A3A3A;
-        border-radius:44px;
+        width: 16rem;
+        ${'' /* text-color: #3A3A3A;
+        border-radius:44px; */}
         background-color:#D2F4FF;
     }
 
     .btn1{
-        max-width: 16rem;
+        width: 16rem;
         border: 2px solid #3282AD;
         
     }
@@ -137,10 +137,177 @@ const Wrapper= styled.section `
     }
 }
 
+    @media (max-width: ${({ theme }) => theme.media.tab}) {
+        .grid {
+            gap: 7.2rem;
+        }
+
+        .section-hero-data{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 290.84px;
+        height: 277.25px  
+    }
+
+    .hero-top-data{
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 30px;
+        
+    }
+
+    .hero-para {
+        margin-top: 1.5rem;
+        margin-bottom: 3.4rem;
+        max-width: 60rem;
+        font-weight: 700;
+        font-size: 30px;
+        text-align: justify;
+        text-justify: inter-character;
+    }
+
+    .btn{
+        width: 12rem;
+        height:4rem;
+        ${'' /* text-color: #3A3A3A;
+        border-radius:44px; */}
+        background-color:#D2F4FF;
+    }
+
+    .logReg{
+        font-weight: 400;
+        font-size: 25px;
+        display:flex;
+        flex-direction: column;
+        align-items:center;
+    }
+
+    .logReg img{
+        width:3rem;
+        height:2rem;
+    }
+
+    .btn1{
+        width: 12rem;
+        height:4rem;
+    }
+
+    .logReg1{
+        font-weight: 400;
+        font-size: 12px;
+        display:flex;
+        flex-direction: column;
+        align-items:center;
+    }
+
+    
+
+
+    .section-hero-image{
+        display:flex;
+        justify-content: center;
+        width: 290.84px;
+        height: 277.25px        
+    }
+
+        .hero-img {
+        width: 290.84px;
+        height: 277.25px;
+    }
+
+        
+
+        
+
+
+    }
+
     @media (max-width: ${({ theme }) => theme.media.mobile}) {
         .grid {
             gap: 7.2rem;
         }
+
+    .section-hero-data{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        height: auto;  
+    }
+
+    .hero-top-data{
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 40px;
+        
+    }
+
+    .hero-para {
+        margin-top: 1.5rem;
+        margin-bottom: 3.4rem;
+        max-width: 60rem;
+        font-weight: 700;
+        font-size: 40px;
+        text-align: justify;
+        text-justify: inter-character;
+    }
+
+    .btn{
+        width: 12rem;
+        height:4rem;
+        ${'' /* text-color: #3A3A3A;
+        border-radius:44px; */}
+        background-color:#D2F4FF;
+    }
+
+    .logReg{
+        font-weight: 400;
+        font-size: 15px;
+        display:flex;
+        flex-direction: column;
+        align-items:center;
+    }
+
+    .logReg img{
+        width:2rem;
+        height:2rem;
+        
+    }
+
+    .btn1{
+        width: 12rem;
+        height:4rem;
+    }
+
+    .logReg1{
+        font-weight: 400;
+        font-size: 9px;
+        display:flex;
+        flex-direction: column;
+        align-items:center;
+    }
+
+    
+
+
+    .section-hero-image{
+        display:flex;
+        justify-content: center;
+        width: 100%x;
+        height: auto;        
+    }
+
+        .hero-img {
+        width: 210.84px;
+        height: 190.25px;
+    }
+
+        
+
+        
+
+
     }
 `;
 

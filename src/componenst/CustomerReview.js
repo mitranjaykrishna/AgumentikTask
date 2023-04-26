@@ -269,7 +269,7 @@ const Wrapper=styled.section`
         .showMessage p{
             margin:0;
             padding:0;
-            font-size:2rem;
+            font-size:1.4rem;
             text-align:center;
         }
     }
