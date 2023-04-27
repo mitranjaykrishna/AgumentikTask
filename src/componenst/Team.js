@@ -4,7 +4,7 @@ import Slider from "./Slider";
 
 const Team=()=>{
     const slides=[
-        {url: "http://localhost:3000/Team/img1.svg", title: 'Person1'},
+        {url: "https://agumentiktask2023.netlify.app/Team/img1.svg", title: 'Person1'},
         {url: "http://localhost:3000/Team/img2.jpg", title: 'Person2'},
         {url: "http://localhost:3000/Team/img3.jpg", title: 'Person3'},
         {url: "http://localhost:3000/Team/img4.jpg", title: 'Person4'},
