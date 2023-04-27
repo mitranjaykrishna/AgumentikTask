@@ -11,22 +11,15 @@ const Team=()=>{
         {url: "http://localhost:3000/Team/img5.jpg", title: 'Person5'},
 
     ]
-
-    const containeStyles={
-        width:'598px',
-        height:'420px',
-        margin:'0 0 0 10rem'
-        
-    };
-
     return (
         <Wrapper>
+        <div className="mainTeam">
             <div className="containerInside">
                 <h2 className="heading">Our Team</h2>
                 <p className="insideThought">Quidam officiis similique sea ei, vel tollit indoctum efficiendi ei, at nihil tantas platoneom eos</p>         
             </div>
             <div className="container grid grid-two-column">
-                    <div style={containeStyles}>
+                    <div className="containeStyles">
                         <Slider slides ={slides}/>
                     </div>
 
@@ -39,6 +32,7 @@ const Team=()=>{
 
                     </div> 
             </div>
+        </div>
 
         </Wrapper>
     )
@@ -69,6 +63,12 @@ const Wrapper=styled.section`
       color: black;
     }
 
+    .containeStyles{
+        width:598px;
+        height:420px;
+        margin:0 0 0 10rem;        
+    }
+
     .c2{
         height:100%;
         position:relative;
@@ -91,20 +91,94 @@ const Wrapper=styled.section`
             bottom:0px;           
         }
     }
-    ${'' /* @media (max-width: ${({ theme }) => theme.media.mobile}) {
+    @media (max-width: ${({ theme }) => theme.media.tab}) {
         .grid {
-            gap: 7.2rem;
+            gap: 3rem;
         }
 
-        .containerInside p{
+        ${'' /* .containerInside p{
         display:flex;
         justify-content: center;
         font-size:1.5rem;
         width:100%;
         padding:0 15rem;
-        text-align:center;
+        text-align:center; */}
+
+        .containeStyles{
+            width:350px;
+            height:270px;
+            margin:0 0 0 10rem;
+        }
+        .c2{
+        height:100%;
+        position:relative;
+        h1{
+            font-size:2rem;
+            color:#3282AD;
+            margin-bottom:1rem;
+        }
+        h2{
+            text-align:left;
+            font-size:1.7rem;
+            margin-bottom:1rem;
+        }
+        p{
+            margin-right:1rem;
+            font-size:1rem;
+
+        }
+        img{
+            position:absolute;
+            bottom:0px;           
+        }
     }
-    } */}
+    }
+    @media (max-width: ${({ theme }) => theme.media.mobile}) {
+        .grid {
+            gap: 4rem;
+
+        }
+
+        ${'' /* .containerInside p{
+        display:flex;
+        justify-content: center;
+        font-size:1.5rem;
+        width:100%;
+        padding:0 15rem;
+        text-align:center; */}
+        ${'' /* .mainTeam{
+            height:500px;
+        } */}
+        .containeStyles{
+            width:250px;
+            height:300px;
+            margin:0 0 0 10rem;
+        }
+        .c2{
+        height:190px;
+        position:relative;
+        h1{
+            font-size:2rem;
+            color:#3282AD;
+            margin-bottom:1rem;
+        }
+        h2{
+            text-align:left;
+            font-size:1.7rem;
+            margin-bottom:1rem;
+        }
+        p{
+            margin-right:3rem;
+            font-size:1rem;
+
+        }
+        img{
+            position:absolute;
+            bottom:0px;           
+        }
+    }
+    }
+    
 `;
 
 export default Team;
