@@ -5,10 +5,10 @@ import Slider from "./Slider";
 const Team=()=>{
     const slides=[
         {url: "https://agumentiktask2023.netlify.app/Team/img1.svg", title: 'Person1'},
-        {url: "http://localhost:3000/Team/img2.jpg", title: 'Person2'},
-        {url: "http://localhost:3000/Team/img3.jpg", title: 'Person3'},
-        {url: "http://localhost:3000/Team/img4.jpg", title: 'Person4'},
-        {url: "http://localhost:3000/Team/img5.jpg", title: 'Person5'},
+        {url: "https://agumentiktask2023.netlify.app/Team/img2.jpg", title: 'Person2'},
+        {url: "https://agumentiktask2023.netlify.app/Team/img3.jpg", title: 'Person3'},
+        {url: "https://agumentiktask2023.netlify.app/Team/img4.jpg", title: 'Person4'},
+        {url: "https://agumentiktask2023.netlify.app/Team/img5.jpg", title: 'Person5'},
 
     ]
     return (
