@@ -28,8 +28,6 @@ const Team=()=>{
                         <h2>Founder,Lead Photographer,CEO</h2>
                         <p>Lorem ipsum dolor sir amet, ut dicat euismod invidunt pro,ne his dolorum molestie reprehendunt, quo luptatum evertitur ex. Altera integre suavitate per an, alienum phaedrum te sea. Ex sea causae dolores, nam et doming dicunt feugait. Ea mel scripta aperiri postulant. Ut sed affert audire</p>
                         <img src="./icon/social.svg" alt="" />
-
-
                     </div> 
             </div>
         </div>

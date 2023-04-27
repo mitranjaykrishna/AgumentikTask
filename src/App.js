@@ -1,14 +1,15 @@
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import './App.css';
-import Home from './componenst/Home';
-import NavBar from './componenst/NavBar';
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import "./App.css";
+import Home from "./componenst/Home";
+import NavBar from "./componenst/NavBar";
 import { GlobalStyle } from "./GlobalStyle";
-import { ThemeProvider } from 'styled-components';
-import Footer from './componenst/Footer';
-import Certificate from './componenst/Certificates';
+import { ThemeProvider } from "styled-components";
+import Footer from "./componenst/Footer";
+import Certificate from "./componenst/Certificates";
+import Admin from "./componenst/Admin/Admin";
 
-const App=()=>{
-    const theme = {
+const App = () => {
+  const theme = {
     colors: {
       heading: "rgb(24 24 29)",
       text: "rgb(24 24 29)",
@@ -28,19 +29,22 @@ const App=()=>{
     },
     media: { mobile: "768px", tab: "998px" },
   };
-  return <>
-  <ThemeProvider theme={theme}>
-    <GlobalStyle />
-    <BrowserRouter>
-      <NavBar/>
-      <Routes>
-        <Route exatct path='/' element={<Home />} />
-        <Route exatct path='/services' element={<Certificate/>} />
-      </Routes>
-      <Footer />
-    </BrowserRouter>
-  </ThemeProvider>
-  </>
-}
+  return (
+    <>
+      <ThemeProvider theme={theme}>
+        <GlobalStyle />
+        <BrowserRouter>
+          <NavBar />
+          <Routes>
+            <Route exatct path="/" element={<Home />} />
+            <Route exatct path="/services" element={<Certificate />} />
+            <Route exatct path="/admin" element={<Admin />} />
+          </Routes>
+          <Footer />
+        </BrowserRouter>
+      </ThemeProvider>
+    </>
+  );
+};
 
 export default App;
